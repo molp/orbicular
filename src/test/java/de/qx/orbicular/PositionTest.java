@@ -28,7 +28,7 @@ public class PositionTest {
         double T0 = 0;
         double t = 15 * 60;
 
-        Position.KeplerResult keplerResult = Position.keplerian(a, e, i, Ω, ω, t, T0, 0, Constants.massEarth, 0);
+        Position.KeplerResult keplerResult = Position.keplerian(a, e, i, Ω, ω, t, T0, 0, Constants.MASS_EARTH, 0);
 
         assertEquals(3194418.35653, keplerResult.position[0], 1e-5);
         assertEquals(-5715730.19269, keplerResult.position[1], 1e-5);
