@@ -30,3 +30,7 @@ final double[] position = {3194418.35653, -5715730.19269, 1116844.10036};
 final double[] velocity = {-199.07213470, -1607.83626052, -7579.15862735};
 final Orbit orbit = Position.stateToOrbit(new State(position, velocity), t, massEarth, 0.0);
 ```
+
+## Build
+
+To build the jars simply call ``sbt publish`` and the jars will be generated in ``./target``
